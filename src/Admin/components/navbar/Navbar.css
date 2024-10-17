@@ -1,0 +1,37 @@
+/* Navbar.css */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d3c3c; /* Màu nền tối */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bóng đổ */
+}
+
+nav h2 {
+    color: #ffffff; /* Màu chữ cho tên quán */
+    margin: 0; /* Bỏ khoảng cách mặc định */
+    font-family: 'Arial', sans-serif; /* Font chữ */
+}
+
+nav ul {
+    list-style: none; /* Bỏ dấu đầu dòng */
+    padding: 0; /* Bỏ khoảng cách */
+    margin: 0; /* Bỏ khoảng cách */
+    display: flex; /* Hiển thị dưới dạng hàng ngang */
+}
+
+nav li {
+    margin-left: 20px; /* Khoảng cách giữa các mục */
+}
+
+nav a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #ffffff; /* Màu chữ cho liên kết */
+    font-weight: bold; /* Chữ đậm */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+nav a:hover {
+    color: #4CAF50; /* Màu chữ khi hover */
+}

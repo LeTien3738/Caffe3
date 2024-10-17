@@ -1,0 +1,107 @@
+/* Căn chỉnh trang đăng nhập */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+}
+
+/* Căn chỉnh cho form */
+form div {
+  margin-bottom: 20px; /* Tăng khoảng cách giữa các phần tử */
+}
+
+label {
+  display: inline-block; /* Sử dụng inline-block để label có kích thước cụ thể */
+  width: 100%; /* Đảm bảo label chiếm toàn bộ chiều ngang của phần tử cha */
+  text-align: left; /* Căn label sang bên trái */
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-weight: bold; /* Tô đậm label */
+}
+
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #e4e5e5; /* Đổi màu border khi focus */
+  outline: none; /* Ẩn outline mặc định */
+}
+
+button {
+  width: auto; /* Đặt chiều rộng tự động để thu nhỏ nút */
+  padding: 8px 12px; /* Giảm padding để thu nhỏ nút */
+  background-color: #d9dbdd;
+  border: none;
+  color: #000000;
+  font-size: 14px; /* Giảm kích thước chữ của nút */
+  font-weight: bold; /* In đậm chữ trong nút */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Thêm hiệu ứng cho button */
+}
+
+button:hover {
+  background-color: #584f52;
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+/* Trang chủ */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #333;
+}
+
+/* Thanh navbar */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff; /* Thay đổi màu cho các link */
+  text-decoration: none; /* Ẩn gạch chân */
+  padding: 5px 10px; /* Thêm khoảng cách cho các link */
+  border-radius: 5px; /* Bo tròn các góc cho link */
+  transition: background-color 0.3s; /* Hiệu ứng cho link khi hover */
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Responsive (tùy chọn) */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+}
