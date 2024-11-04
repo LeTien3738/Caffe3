@@ -9,6 +9,8 @@ import CreateProduct from './navbar/CRUDproduct/CreateProduct';
 import UpdateProduct from './navbar/CRUDproduct/UpdateProduct';
 import CreateEmployee from './navbar/CRUDemployee/CreateEmployee';
 import UpdateEmployee from './navbar/CRUDemployee/UpdateEmployee';
+import CreateInventory from './navbar/CRUDInventory/CreateInventory';
+import UpdateInventory from './navbar/CRUDInventory/UpdateInventory';
 
 function Home() {
   return (
@@ -21,14 +23,22 @@ function Home() {
           <Route path="/product" element={<Product />} />
           <Route path="/inventory" element={<Inventory />} />
           <Route path="/revenue" element={<Revenue />} />
-          <Route path="/create-product" element={<CreateProduct />} /> {/* Route cho Tạo sản phẩm */}
-          <Route path="/update-product/:id" element={<UpdateProduct />} /> {/* Route cho Cập nhật sản phẩm */}
-          <Route path="/create-employee" element={<CreateEmployee />} /> {/* Route cho Tạo nhân viên */}
-          <Route path="/update-employee/:id" element={<UpdateEmployee />} /> {/* Route cho Cập nhật nhân viên */}
+          
+          {/* CRUD cho sản phẩm */}
+          <Route path="/create-product" element={<CreateProduct />} /> {/* Tạo sản phẩm */}
+          <Route path="/update-product/:id" element={<UpdateProduct />} /> {/* Cập nhật sản phẩm */}
+          
+          {/* CRUD cho nhân viên */}
+          <Route path="/create-employee" element={<CreateEmployee />} /> {/* Tạo nhân viên */}
+          <Route path="/update-employee/:id" element={<UpdateEmployee />} /> {/* Cập nhật nhân viên */}
+          
+          {/* CRUD cho kho */}
+          <Route path="/create-inventory" element={<CreateInventory />} /> {/* Tạo kho, không cần id */}
+          <Route path="/update-inventory/:id" element={<UpdateInventory />} /> {/* Cập nhật kho */}
         </Routes>
       </div>
     </Router>
   );
 }
 
-export default Home; 
+export default Home;

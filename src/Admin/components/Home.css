@@ -1,3 +1,19 @@
+/* Background image for the entire page */
+.home-container {
+  background-image: url(../Image/Home.jpg); /* Replace with the correct path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
 /* Định dạng toàn trang */
 body {
   font-family: Arial, sans-serif;
